@@ -1,0 +1,1166 @@
+---
+title: 'Roof Cleaning Carlow | Revival Exterior Cleaning'
+description: 'Expert Roof Cleaning Carlow & Leinster. Revival Exterior Cleaning removes moss, algae & dirt fast. Fully insured. Get a free quote today call +353 83 280 9535.'
+preloadImg: '/assets/images/home-hero.jpg'
+permalink: '/'
+tags: 'sitemap'
+eleventyNavigation:
+  key: Home
+  order: 100
+---
+
+{% extends "layouts/home-base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/local.css">
+{% endblock %}
+
+{% block body %}
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Revival Exterior Cleaning",
+      "description": "Professional roof cleaning, power washing and gutter cleaning services across Carlow, Co. Dublin and Co. Kildare.",
+      "url": "https://revivalexteriorclean.ie/",
+      "telephone": "+353832809535",
+      "email": "revivalexteriorclean@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Carlow",
+        "addressCountry": "IE"
+      },
+      "areaServed": [
+        { "@type": "AdministrativeArea", "name": "Co. Carlow" },
+        { "@type": "AdministrativeArea", "name": "Co. Dublin" },
+        { "@type": "AdministrativeArea", "name": "Co. Kildare" },
+        { "@type": "AdministrativeArea", "name": "Leinster" }
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "16:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/",
+        "https://www.instagram.com/"
+      ]
+    }
+    </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Roof Cleaning Carlow",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Revival Exterior Cleaning",
+        "telephone": "+353832809535",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Carlow",
+          "addressCountry": "IE"
+        }
+      },
+      "areaServed": [
+        { "@type": "AdministrativeArea", "name": "Co. Carlow" },
+        { "@type": "AdministrativeArea", "name": "Co. Dublin" },
+        { "@type": "AdministrativeArea", "name": "Co. Kildare" }
+      ],
+      "description": "Professional roof cleaning service in Carlow removing moss, lichen, algae and debris using safe soft-wash and pressure washing techniques.",
+      "url": "https://revivalexteriorclean.ie/services/"
+    }
+    </script>
+
+  <style>
+      /* ── PAGE VARS & RESET ── */
+      :root {
+        --pd-primary: #0F2A43;
+        --pd-accent: #F59E0B;
+        --pd-light: #E8F4FD;
+        --pd-white: #ffffff;
+        --pd-font-display: 'Poppins', sans-serif;
+        --pd-font-body: 'Roboto', sans-serif;
+      }
+
+      *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html { scroll-behavior: smooth; }
+
+      body {
+        font-family: var(--pd-font-body);
+        color: #1a1a1a;
+        background: var(--pd-white);
+        line-height: 1.7;
+      }
+
+      img { max-width: 100%; display: block; }
+
+      /* ── WRAPPER ── */
+      .revival-exterior-cleaning-home {
+        overflow-x: hidden;
+      }
+
+      /* ── SHARED UTILITIES ── */
+      .revival-exterior-cleaning-home .rec-eyebrow {
+        display: inline-block;
+        font-family: var(--pd-font-display);
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--pd-accent);
+        margin-bottom: 10px;
+      }
+
+      .revival-exterior-cleaning-home .rec-section-inner {
+        max-width: 1160px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .revival-exterior-cleaning-home .rec-btn {
+        display: inline-block;
+        font-family: var(--pd-font-display);
+        font-size: 0.9rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        padding: 14px 28px;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: background 0.2s, transform 0.15s, box-shadow 0.15s;
+        cursor: pointer;
+        border: none;
+      }
+
+      .revival-exterior-cleaning-home .rec-btn--accent {
+        background: var(--pd-accent);
+        color: var(--pd-primary);
+      }
+
+      .revival-exterior-cleaning-home .rec-btn--accent:hover {
+        background: #d97706;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 18px rgba(245,158,11,0.35);
+      }
+
+      .revival-exterior-cleaning-home .rec-btn--outline-white {
+        background: transparent;
+        color: var(--pd-white);
+        border: 2px solid var(--pd-white);
+      }
+
+      .revival-exterior-cleaning-home .rec-btn--outline-white:hover {
+        background: var(--pd-white);
+        color: var(--pd-primary);
+        transform: translateY(-2px);
+      }
+
+      .revival-exterior-cleaning-home .rec-btn--white {
+        background: var(--pd-white);
+        color: var(--pd-primary);
+      }
+
+      .revival-exterior-cleaning-home .rec-btn--white:hover {
+        background: var(--pd-light);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 18px rgba(255,255,255,0.25);
+      }
+
+      /* ── 1. HERO ── */
+      .revival-exterior-cleaning-home .rec-hero {
+        position: relative;
+        min-height: 560px;
+        display: flex;
+        align-items: center;
+        background: url('/assets/images/AI-PAT2.png') center center / cover no-repeat;
+      }
+
+      .revival-exterior-cleaning-home .rec-hero__overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(135deg, rgba(15,42,67,0.88) 0%, rgba(15,42,67,0.65) 100%);
+      }
+
+      .revival-exterior-cleaning-home .rec-hero__content {
+        position: relative;
+        z-index: 1;
+        max-width: 1160px;
+        margin: 0 auto;
+        padding: 80px 20px 60px;
+        width: 100%;
+      }
+
+      .revival-exterior-cleaning-home .rec-hero__label {
+        display: inline-block;
+        font-family: var(--pd-font-display);
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--pd-accent);
+        background: rgba(245,158,11,0.12);
+        border: 1px solid rgba(245,158,11,0.35);
+        border-radius: 4px;
+        padding: 5px 12px;
+        margin-bottom: 20px;
+      }
+
+      .revival-exterior-cleaning-home .rec-hero h1 {
+        font-family: var(--pd-font-display);
+        font-size: 2rem;
+        font-weight: 800;
+        color: var(--pd-white);
+        line-height: 1.2;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+        max-width: 700px;
+        margin-bottom: 24px;
+      }
+
+      .revival-exterior-cleaning-home .rec-hero h1 span {
+        color: var(--pd-accent);
+      }
+
+      .revival-exterior-cleaning-home .rec-hero__trust {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .revival-exterior-cleaning-home .rec-hero__trust li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: var(--pd-font-display);
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: rgba(255,255,255,0.92);
+      }
+
+      .revival-exterior-cleaning-home .rec-hero__trust li svg {
+        flex-shrink: 0;
+        color: var(--pd-accent);
+      }
+
+      .revival-exterior-cleaning-home .rec-hero__ctas {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+      }
+
+      /* ── 2. INTRO SPLIT ── */
+      .revival-exterior-cleaning-home .rec-intro {
+        background: var(--pd-white);
+        padding: 72px 0;
+      }
+
+      .revival-exterior-cleaning-home .rec-intro__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .revival-exterior-cleaning-home .rec-intro__text h2 {
+        font-family: var(--pd-font-display);
+        font-size: 1.7rem;
+        font-weight: 800;
+        color: var(--pd-primary);
+        line-height: 1.25;
+        margin-bottom: 20px;
+      }
+
+      .revival-exterior-cleaning-home .rec-intro__text h2 span {
+        color: var(--pd-accent);
+      }
+
+      .revival-exterior-cleaning-home .rec-intro__text p {
+        font-size: 0.98rem;
+        color: #444;
+        margin-bottom: 16px;
+      }
+
+      .revival-exterior-cleaning-home .rec-trust-badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-top: 28px;
+      }
+
+      .revival-exterior-cleaning-home .rec-trust-badge {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background: var(--pd-light);
+        border-radius: 8px;
+        padding: 10px 16px;
+        font-family: var(--pd-font-display);
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: var(--pd-primary);
+      }
+
+      .revival-exterior-cleaning-home .rec-trust-badge svg {
+        color: var(--pd-accent);
+        flex-shrink: 0;
+      }
+
+      .revival-exterior-cleaning-home .rec-intro__image {
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 8px 32px rgba(15,42,67,0.14);
+      }
+
+      .revival-exterior-cleaning-home .rec-intro__image img {
+        width: 100%;
+        height: 320px;
+        object-fit: cover;
+      }
+
+      /* ── 3. SERVICES ── */
+      .revival-exterior-cleaning-home .rec-services {
+        background: var(--pd-light);
+        padding: 72px 0;
+      }
+
+      .revival-exterior-cleaning-home .rec-services__header {
+        text-align: center;
+        margin-bottom: 52px;
+      }
+
+      .revival-exterior-cleaning-home .rec-services__header h2 {
+        font-family: var(--pd-font-display);
+        font-size: 1.7rem;
+        font-weight: 800;
+        color: var(--pd-primary);
+        line-height: 1.25;
+      }
+
+      .revival-exterior-cleaning-home .rec-services__header p {
+        font-size: 1rem;
+        color: #555;
+        max-width: 600px;
+        margin: 12px auto 0;
+      }
+
+      .revival-exterior-cleaning-home .service-block {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+        background: var(--pd-white);
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 24px rgba(15,42,67,0.10);
+        margin-bottom: 36px;
+      }
+
+      .revival-exterior-cleaning-home .service-block:last-child {
+        margin-bottom: 0;
+      }
+
+      .revival-exterior-cleaning-home .service-block__image {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+      }
+
+      .revival-exterior-cleaning-home .service-block__body {
+        padding: 32px 28px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .revival-exterior-cleaning-home .service-block__body h3 {
+        font-family: var(--pd-font-display);
+        font-size: 1.3rem;
+        font-weight: 800;
+        color: var(--pd-primary);
+        margin-bottom: 12px;
+      }
+
+      .revival-exterior-cleaning-home .service-block__body p {
+        font-size: 0.95rem;
+        color: #555;
+        margin-bottom: 20px;
+        line-height: 1.7;
+      }
+
+      .revival-exterior-cleaning-home .rec-link {
+        font-family: var(--pd-font-display);
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: var(--pd-accent);
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        text-transform: uppercase;
+        letter-spacing: 0.07em;
+        transition: gap 0.2s;
+      }
+
+      .revival-exterior-cleaning-home .rec-link:hover {
+        gap: 10px;
+      }
+
+      /* ── 4. WHY CHOOSE US ── */
+      .revival-exterior-cleaning-home .rec-why {
+        background: var(--pd-primary);
+        padding: 72px 0;
+      }
+
+      .revival-exterior-cleaning-home .rec-why__header {
+        text-align: center;
+        margin-bottom: 44px;
+      }
+
+      .revival-exterior-cleaning-home .rec-why__header h2 {
+        font-family: var(--pd-font-display);
+        font-size: 1.7rem;
+        font-weight: 800;
+        color: var(--pd-white);
+        line-height: 1.25;
+      }
+
+      .revival-exterior-cleaning-home .rec-why__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .revival-exterior-cleaning-home .rec-why__card {
+        background: rgba(255,255,255,0.06);
+        border: 1px solid rgba(255,255,255,0.1);
+        border-radius: 8px;
+        padding: 28px 24px;
+        text-align: center;
+      }
+
+      .revival-exterior-cleaning-home .rec-why__card-icon {
+        width: 54px;
+        height: 54px;
+        background: rgba(245,158,11,0.15);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 16px;
+        color: var(--pd-accent);
+      }
+
+      .revival-exterior-cleaning-home .rec-why__card h3 {
+        font-family: var(--pd-font-display);
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--pd-white);
+        margin-bottom: 8px;
+      }
+
+      .revival-exterior-cleaning-home .rec-why__card p {
+        font-size: 0.88rem;
+        color: rgba(255,255,255,0.72);
+        line-height: 1.6;
+      }
+
+      /* ── 5. TESTIMONIALS ── */
+      .revival-exterior-cleaning-home .rec-testimonials {
+        background: var(--pd-white);
+        padding: 72px 0;
+      }
+
+      .revival-exterior-cleaning-home .rec-testimonials__header {
+        text-align: center;
+        margin-bottom: 44px;
+      }
+
+      .revival-exterior-cleaning-home .rec-testimonials__header h2 {
+        font-family: var(--pd-font-display);
+        font-size: 1.7rem;
+        font-weight: 800;
+        color: var(--pd-primary);
+      }
+
+      .revival-exterior-cleaning-home .rec-testimonials__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .revival-exterior-cleaning-home .rec-review-card {
+        background: var(--pd-light);
+        border-radius: 8px;
+        padding: 28px 24px;
+        box-shadow: 0 2px 12px rgba(15,42,67,0.07);
+        position: relative;
+      }
+
+      .revival-exterior-cleaning-home .rec-review-card__stars {
+        display: flex;
+        gap: 3px;
+        margin-bottom: 14px;
+        color: var(--pd-accent);
+      }
+
+      .revival-exterior-cleaning-home .rec-review-card__text {
+        font-size: 0.95rem;
+        color: #444;
+        font-style: italic;
+        margin-bottom: 16px;
+        line-height: 1.7;
+      }
+
+      .revival-exterior-cleaning-home .rec-review-card__author {
+        font-family: var(--pd-font-display);
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: var(--pd-primary);
+      }
+
+      .revival-exterior-cleaning-home .rec-review-card__source {
+        font-size: 0.75rem;
+        color: #888;
+        margin-top: 2px;
+      }
+
+      .revival-exterior-cleaning-home .rec-review-card__google-badge {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 0.7rem;
+        font-weight: 700;
+        color: #888;
+        font-family: var(--pd-font-display);
+      }
+
+      /* ── 6. FINAL CTA / FORM ── */
+      .revival-exterior-cleaning-home .rec-cta-form {
+        background: var(--pd-primary);
+        padding: 72px 0 80px;
+      }
+
+      .revival-exterior-cleaning-home .rec-cta-form__header {
+        text-align: center;
+        margin-bottom: 44px;
+      }
+
+      .revival-exterior-cleaning-home .rec-cta-form__header h2 {
+        font-family: var(--pd-font-display);
+        font-size: 1.7rem;
+        font-weight: 800;
+        color: var(--pd-white);
+        line-height: 1.25;
+        margin-bottom: 10px;
+      }
+
+      .revival-exterior-cleaning-home .rec-cta-form__header p {
+        font-size: 0.98rem;
+        color: rgba(255,255,255,0.75);
+      }
+
+      .revival-exterior-cleaning-home .rec-cta-form__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        align-items: start;
+      }
+
+      .revival-exterior-cleaning-home .rec-form {
+        background: var(--pd-white);
+        border-radius: 8px;
+        padding: 36px 28px;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+      }
+
+      .revival-exterior-cleaning-home .rec-form h3 {
+        font-family: var(--pd-font-display);
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: var(--pd-primary);
+        margin-bottom: 24px;
+      }
+
+      .revival-exterior-cleaning-home .rec-form__field {
+        margin-bottom: 18px;
+      }
+
+      .revival-exterior-cleaning-home .rec-form__field label {
+        display: block;
+        font-family: var(--pd-font-display);
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: var(--pd-primary);
+        margin-bottom: 6px;
+        letter-spacing: 0.03em;
+      }
+
+      .revival-exterior-cleaning-home .rec-form__field input,
+      .revival-exterior-cleaning-home .rec-form__field textarea {
+        width: 100%;
+        padding: 12px 14px;
+        border: 2px solid #dde6ef;
+        border-radius: 4px;
+        font-family: var(--pd-font-body);
+        font-size: 0.95rem;
+        color: #1a1a1a;
+        background: #fff;
+        transition: border-color 0.2s;
+        outline: none;
+      }
+
+      .revival-exterior-cleaning-home .rec-form__field input:focus,
+      .revival-exterior-cleaning-home .rec-form__field textarea:focus {
+        border-color: var(--pd-accent);
+      }
+
+      .revival-exterior-cleaning-home .rec-form__field textarea {
+        resize: vertical;
+        min-height: 110px;
+      }
+
+      .revival-exterior-cleaning-home .rec-form__submit {
+        width: 100%;
+        font-size: 1rem;
+        padding: 16px;
+      }
+
+      .revival-exterior-cleaning-home .rec-cta-form__aside {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      .revival-exterior-cleaning-home .rec-cta-form__aside-heading {
+        font-family: var(--pd-font-display);
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: var(--pd-white);
+        margin-bottom: 8px;
+      }
+
+      .revival-exterior-cleaning-home .rec-cta-form__aside p {
+        font-size: 0.92rem;
+        color: rgba(255,255,255,0.75);
+        line-height: 1.7;
+      }
+
+      .revival-exterior-cleaning-home .rec-cta-form__phone-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-family: var(--pd-font-display);
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--pd-accent);
+        text-decoration: none;
+        padding: 16px 20px;
+        border: 2px solid var(--pd-accent);
+        border-radius: 4px;
+        transition: background 0.2s, color 0.2s, transform 0.15s;
+        align-self: flex-start;
+      }
+
+      .revival-exterior-cleaning-home .rec-cta-form__phone-cta:hover {
+        background: var(--pd-accent);
+        color: var(--pd-primary);
+        transform: translateY(-2px);
+      }
+
+      .revival-exterior-cleaning-home .rec-cta-form__perks {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .revival-exterior-cleaning-home .rec-cta-form__perks li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.9rem;
+        color: rgba(255,255,255,0.85);
+      }
+
+      .revival-exterior-cleaning-home .rec-cta-form__perks li svg {
+        color: var(--pd-accent);
+        flex-shrink: 0;
+      }
+
+      /* ── RESPONSIVE 768px ── */
+      @media (min-width: 768px) {
+        .revival-exterior-cleaning-home .rec-hero h1 {
+          font-size: 2.8rem;
+        }
+
+        .revival-exterior-cleaning-home .rec-hero__trust {
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 12px 28px;
+        }
+
+        .revival-exterior-cleaning-home .rec-hero__ctas {
+          flex-direction: row;
+          align-items: center;
+        }
+
+        .revival-exterior-cleaning-home .rec-intro__grid {
+          grid-template-columns: 1fr 1fr;
+          align-items: center;
+        }
+
+        .revival-exterior-cleaning-home .rec-intro__image img {
+          height: 400px;
+        }
+
+        .revival-exterior-cleaning-home .service-block {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .revival-exterior-cleaning-home .service-block.reverse .service-block__image {
+          order: 2;
+        }
+
+        .revival-exterior-cleaning-home .service-block.reverse .service-block__body {
+          order: 1;
+        }
+
+        .revival-exterior-cleaning-home .service-block__image {
+          width: 100%;
+          height: 100%;
+          min-height: 280px;
+          object-fit: cover;
+        }
+
+        .revival-exterior-cleaning-home .rec-why__grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .revival-exterior-cleaning-home .rec-testimonials__grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .revival-exterior-cleaning-home .rec-cta-form__grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      /* ── RESPONSIVE 1024px ── */
+      @media (min-width: 1024px) {
+        .revival-exterior-cleaning-home .rec-hero h1 {
+          font-size: 3.4rem;
+        }
+
+        .revival-exterior-cleaning-home .rec-intro__text h2,
+        .revival-exterior-cleaning-home .rec-services__header h2,
+        .revival-exterior-cleaning-home .rec-why__header h2,
+        .revival-exterior-cleaning-home .rec-testimonials__header h2,
+        .revival-exterior-cleaning-home .rec-cta-form__header h2 {
+          font-size: 2.1rem;
+        }
+
+        .revival-exterior-cleaning-home .rec-why__grid {
+          grid-template-columns: repeat(4, 1fr);
+        }
+
+        .revival-exterior-cleaning-home .rec-testimonials__grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+    </style>
+
+<div class="revival-exterior-cleaning-home">
+
+  <!-- ══════════════════════════════════════
+       1. HERO
+  ══════════════════════════════════════ -->
+  <section class="rec-hero" aria-label="Hero section">
+    <div class="rec-hero__overlay" aria-hidden="true"></div>
+    <div class="rec-hero__content">
+      <span class="rec-hero__label">Serving Carlow, Dublin &amp; Kildare</span>
+      <h1>
+        <span>Roof Cleaning Carlow</span><br>
+        That Actually Lasts
+      </h1>
+      <ul class="rec-hero__trust" aria-label="Trust points">
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Moss, algae &amp; lichen removed — roof life extended
+        </li>
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Fully insured — peace of mind guaranteed
+        </li>
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          No mess left behind — we tidy up completely
+        </li>
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Fast free quotes — same-day response
+        </li>
+      </ul>
+      <div class="rec-hero__ctas">
+        <a href="/contact/" class="rec-btn rec-btn--accent">Get a Fast Free Quote</a>
+        <a href="tel:+353832809535" class="rec-btn rec-btn--outline-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+          Call +353 83 280 9535
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       2. INTRO SPLIT
+  ══════════════════════════════════════ -->
+  <section class="rec-intro" aria-labelledby="intro-heading">
+    <div class="rec-section-inner">
+      <div class="rec-intro__grid">
+        <div class="rec-intro__text">
+          <span class="rec-eyebrow">Why it matters</span>
+          <h2 id="intro-heading">
+            Carlow's Go-To Team for<br>
+            <span>Roof Cleaning &amp; Exterior Care</span>
+          </h2>
+          <p>
+            A moss-covered roof isn't just an eyesore — it's silently damaging your tiles, blocking drainage and knocking value off your home. Left too long, the repair bill dwarfs the cost of a clean. We've seen it dozens of times across Carlow, Kildare and Dublin.
+          </p>
+          <p>
+            Revival Exterior Cleaning uses professional-grade soft-wash and pressure washing systems to strip away years of build-up safely. We treat the root cause, not just the surface, so results last far longer than a standard hosepipe blast. Your neighbours will notice.
+          </p>
+          <div class="rec-trust-badges" role="list" aria-label="Trust badges">
+            <div class="rec-trust-badge" role="listitem">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Fully Insured
+            </div>
+            <div class="rec-trust-badge" role="listitem">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Years of Experience
+            </div>
+            <div class="rec-trust-badge" role="listitem">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              No-Mess Guarantee
+            </div>
+            <div class="rec-trust-badge" role="listitem">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Carlow, Dublin &amp; Kildare
+            </div>
+          </div>
+        </div>
+        <div class="rec-intro__image">
+          <img src="/assets/images/roof-before-after1.png" alt="Revival Exterior Cleaning team cleaning a roof in Carlow" loading="lazy" width="600" height="400">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       3. SERVICE BLOCKS
+  ══════════════════════════════════════ -->
+  <section class="rec-services" aria-labelledby="services-heading">
+    <div class="rec-section-inner">
+      <div class="rec-services__header">
+        <span class="rec-eyebrow">What We Do</span>
+        <h2 id="services-heading">Our Exterior Cleaning Services</h2>
+        <p>From rooftop to driveway — we handle the lot. Professional kit, experienced crew, spotless results.</p>
+      </div>
+
+      <!-- Service Block 1: Roof Cleaning -->
+      <article class="service-block" aria-label="Roof Cleaning service">
+        <img
+          class="service-block__image"
+          src="/assets/images/roof-before-after2.png"
+          alt="Professional roof cleaning in Carlow removing moss and algae"
+          loading="lazy"
+          width="600"
+          height="400"
+        >
+        <div class="service-block__body">
+          <span class="rec-eyebrow">Service 01</span>
+          <h3>Roof Cleaning Carlow</h3>
+          <p>
+            Moss and algae eat into your tiles over time — causing leaks, damp and costly repair work down the line. Our soft-wash roof cleaning system kills the problem at the root, restoring your roof's appearance and extending its lifespan. Safe on all tile types, no high-pressure blasting that could cause damage.
+          </p>
+          <a href="/services/" class="rec-link">
+            Learn More
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Service Block 2: Power Washing -->
+      <article class="service-block reverse" aria-label="Power Washing service">
+        <img
+          class="service-block__image"
+          src="/assets/images/washed-driveway.png"
+          alt="Power washing a driveway in Carlow"
+          loading="lazy"
+          width="600"
+          height="400"
+        >
+        <div class="service-block__body">
+          <span class="rec-eyebrow">Service 02</span>
+          <h3>Power Washing Carlow</h3>
+          <p>
+            Driveways, patios, paths and decking looking tired and greasy? Our commercial-grade pressure washers blast away dirt, oil, algae and stains in a fraction of the time a domestic machine would take. The transformation is instant — you'll wonder why you waited.
+          </p>
+          <a href="/power-washing-carlow" class="rec-link">
+            Learn More
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Service Block 3: Gutter Cleaning -->
+      <article class="service-block" aria-label="Gutter Cleaning service">
+        <img
+          class="service-block__image"
+          src="/assets/images/before-after-gutter (1).png"
+          alt="Gutter cleaning service in Carlow"
+          loading="lazy"
+          width="600"
+          height="400"
+        >
+        <div class="service-block__body">
+          <span class="rec-eyebrow">Service 03</span>
+          <h3>Gutter Cleaning Carlow</h3>
+          <p>
+            Blocked gutters overflow silently — causing damp walls, damaged fascias and even flooded foundations before you notice anything wrong. We clear every blockage, flush the downpipes and leave your drainage running freely. A quick job that saves a fortune in repairs.
+          </p>
+          <a href="/gutter-cleaning-carlow" class="rec-link">
+            Learn More
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       4. WHY CHOOSE US
+  ══════════════════════════════════════ -->
+  <section class="rec-why" aria-labelledby="why-heading">
+    <div class="rec-section-inner">
+      <div class="rec-why__header">
+        <span class="rec-eyebrow">Why Revival</span>
+        <h2 id="why-heading">Why Homeowners Across Leinster Choose Us</h2>
+      </div>
+      <div class="rec-why__grid">
+
+        <div class="rec-why__card">
+          <div class="rec-why__card-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Fully Insured</h3>
+          <p>Every job is covered. You're protected from start to finish — no cutting corners on safety or liability.</p>
+        </div>
+
+        <div class="rec-why__card">
+          <div class="rec-why__card-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Fast Turnaround</h3>
+          <p>We quote fast and get booked in quickly. No weeks-long wait — we respect your time and your schedule.</p>
+        </div>
+
+        <div class="rec-why__card">
+          <div class="rec-why__card-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h3>No Mess Left Behind</h3>
+          <p>We clean up everything before we leave. Your property will look better than when we arrived — guaranteed.</p>
+        </div>
+
+        <div class="rec-why__card">
+          <div class="rec-why__card-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3>Local &amp; Trusted</h3>
+          <p>Based in Carlow, we know the local climate and what it does to roofs and exteriors. We're your neighbours — and we act like it.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       5. TESTIMONIALS
+  ══════════════════════════════════════ -->
+  <section class="rec-testimonials" aria-labelledby="testimonials-heading">
+    <div class="rec-section-inner">
+      <div class="rec-testimonials__header">
+        <span class="rec-eyebrow">What Customers Say</span>
+        <h2 id="testimonials-heading">Real Reviews from Real Homeowners</h2>
+      </div>
+      <div class="rec-testimonials__grid">
+
+        <!-- Real testimonial -->
+        <div class="rec-review-card">
+          <div class="rec-review-card__google-badge" aria-label="Google review">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.30 0 1 4 10z"/></svg>
+            Google
+          </div>
+          <div class="rec-review-card__stars" aria-label="5 out of 5 stars">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="rec-review-card__text">"Brilliant job, no mess left behind. The roof looks brand new — couldn't be happier with the result."</p>
+          <div class="rec-review-card__author">John</div>
+          <div class="rec-review-card__source">Carlow</div>
+        </div>
+
+        <!-- PLACEHOLDER TESTIMONIAL - replace -->
+        <div class="rec-review-card">
+          <div class="rec-review-card__google-badge" aria-label="Google review">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            Google
+          </div>
+          <div class="rec-review-card__stars" aria-label="5 out of 5 stars">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="rec-review-card__text">"Used Revival for a full driveway power wash and gutter clean. Showed up on time, worked efficiently and the place looks fantastic. Will definitely use again."</p>
+          <div class="rec-review-card__author">Sarah M.</div>
+          <div class="rec-review-card__source">Co. Kildare</div>
+        </div>
+
+        <!-- PLACEHOLDER TESTIMONIAL - replace -->
+        <div class="rec-review-card">
+          <div class="rec-review-card__google-badge" aria-label="Google review">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            Google
+          </div>
+          <div class="rec-review-card__stars" aria-label="5 out of 5 stars">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="rec-review-card__text">"Had the roof done before putting the house on the market. The difference was night and day — our estate agent was genuinely impressed. Quick quote, fair price, excellent work."</p>
+          <div class="rec-review-card__author">Declan R.</div>
+          <div class="rec-review-card__source">Co. Dublin</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       6. FINAL CTA + QUOTE FORM
+  ══════════════════════════════════════ -->
+  <section class="rec-cta-form" aria-labelledby="cta-form-heading">
+    <div class="rec-section-inner">
+      <div class="rec-cta-form__header">
+        <span class="rec-eyebrow">Get Started Today</span>
+        <h2 id="cta-form-heading">Don't Let Moss &amp; Dirt Cost You More.<br>Book Your Free Quote Now.</h2>
+        <p>We respond fast. Most quotes turned around same day. No obligation, no hard sell.</p>
+      </div>
+      <div class="rec-cta-form__grid">
+
+        <!-- Quote Form -->
+        <div class="rec-form">
+          <h3>Request Your Free Quote</h3>
+          <form name="quote-home" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="quote-home">
+            <p hidden><label>Don't fill this out: <input name="bot-field"></label></p>
+
+            <div class="rec-form__field">
+              <label for="home-name">Full Name</label>
+              <input type="text" id="home-name" name="name" placeholder="e.g. Aoife Murphy" required>
+            </div>
+
+            <div class="rec-form__field">
+              <label for="home-email">Email Address</label>
+              <input type="email" id="home-email" name="email" placeholder="e.g. aoife@example.ie" required>
+            </div>
+
+            <div class="rec-form__field">
+              <label for="home-phone">Phone Number</label>
+              <input type="tel" id="home-phone" name="phone" placeholder="e.g. 083 123 4567" required>
+            </div>
+
+            <div class="rec-form__field">
+              <label for="home-eircode">Eircode / Postcode</label>
+              <input type="text" id="home-eircode" name="eircode" placeholder="e.g. R93 XY12" required>
+            </div>
+
+            <div class="rec-form__field">
+              <label for="home-message">Tell Us About the Job</label>
+              <textarea id="home-message" name="message" placeholder="e.g. Roof cleaning needed, semi-detached, Carlow town..." required></textarea>
+            </div>
+
+            <button type="submit" class="rec-btn rec-btn--accent rec-form__submit">Send My Free Quote Request</button>
+          </form>
+        </div>
+
+        <!-- Aside -->
+        <div class="rec-cta-form__aside">
+          <div>
+            <p class="rec-cta-form__aside-heading">Prefer to talk? Call us directly.</p>
+            <p>We're available Mon–Fri 8am–6pm and Saturday 9am–4pm. Quick chat, honest advice, no pressure.</p>
+          </div>
+
+          <a href="tel:+353832809535" class="rec-cta-form__phone-cta" aria-label="Call Revival Exterior Cleaning now">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+            +353 83 280 9535
+          </a>
+
+          <ul class="rec-cta-form__perks" aria-label="Booking perks">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              100% free, no-obligation quote
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Same-day response in most cases
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Serving Carlow, Dublin &amp; Kildare
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Fully insured for your peace of mind
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</div><!-- /.revival-exterior-cleaning-home -->
+
+{% endblock %}

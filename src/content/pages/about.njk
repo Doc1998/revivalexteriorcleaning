@@ -1,0 +1,713 @@
+---
+title: 'About Revival Exterior Cleaning | Carlow'
+description: 'About Revival Exterior Cleaning — Carlows trusted roof & exterior cleaning pros serving Co. Carlow, Dublin & Kildare. Years of experience, fast free quotes.'
+preloadImg: '/assets/images/about-hero.jpg'
+permalink: '/about/'
+tags: 'sitemap'
+eleventyNavigation:
+  key: About
+  order: 300
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/local.css">
+{% endblock %}
+
+{% block body %}
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "About Revival Exterior Cleaning",
+      "url": "https://revivalexteriorclean.ie/about/",
+      "description": "About Revival Exterior Cleaning — Carlow's trusted roof and exterior cleaning specialists serving Co. Carlow, Co. Dublin and Co. Kildare.",
+      "mainEntity": {
+        "@type": "LocalBusiness",
+        "name": "Revival Exterior Cleaning",
+        "description": "Professional roof cleaning, power washing and gutter cleaning serving Carlow, Dublin and Kildare.",
+        "url": "https://revivalexteriorclean.ie",
+        "telephone": "+353832809535",
+        "email": "revivalexteriorclean@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Carlow",
+          "addressRegion": "Leinster",
+          "addressCountry": "IE"
+        },
+        "areaServed": [
+          {
+            "@type": "AdministrativeArea",
+            "name": "County Carlow"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "County Dublin"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "County Kildare"
+          }
+        ],
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "08:00",
+            "closes": "18:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "09:00",
+            "closes": "16:00"
+          }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Exterior Cleaning Services",
+          "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Roof Cleaning"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Power Washing"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Gutter Cleaning"}}
+          ]
+        }
+      }
+    }
+    </script>
+
+  <style>
+      /* ─── Page Wrapper ─── */
+      .revival-exterior-cleaning-about {
+        font-family: 'Roboto', sans-serif;
+        color: #0F2A43;
+      }
+
+      .revival-exterior-cleaning-about *,
+      .revival-exterior-cleaning-about *::before,
+      .revival-exterior-cleaning-about *::after {
+        box-sizing: border-box;
+      }
+
+      /* ─── Design tokens (scoped) ─── */
+      .revival-exterior-cleaning-about {
+        --about-primary: #0F2A43;
+        --about-accent: #F59E0B;
+        --about-light: #E8F4FD;
+        --about-white: #ffffff;
+        --about-dark-alt: #0a1f33;
+        --about-font-display: 'Poppins', sans-serif;
+        --about-font-body: 'Roboto', sans-serif;
+      }
+
+      /* ─── Utility ─── */
+      .revival-exterior-cleaning-about .about-eyebrow {
+        display: inline-block;
+        font-family: var(--about-font-display);
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--about-accent);
+        margin-bottom: 10px;
+      }
+
+      .revival-exterior-cleaning-about .about-section-title {
+        font-family: var(--about-font-display);
+        font-weight: 800;
+        color: var(--about-primary);
+        line-height: 1.2;
+        margin-bottom: 16px;
+        font-size: 1.6rem;
+      }
+
+      .revival-exterior-cleaning-about .about-section-title--white {
+        color: var(--about-white);
+      }
+
+      .revival-exterior-cleaning-about .about-btn {
+        display: inline-block;
+        font-family: var(--about-font-display);
+        font-size: 0.9rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        background-color: var(--about-accent);
+        color: var(--about-primary);
+        text-decoration: none;
+        padding: 14px 28px;
+        border-radius: 4px;
+        transition: background 0.2s, transform 0.15s;
+      }
+
+      .revival-exterior-cleaning-about .about-btn:hover {
+        background-color: #d97706;
+        transform: translateY(-2px);
+      }
+
+      .revival-exterior-cleaning-about .about-btn--outline {
+        background-color: transparent;
+        border: 2px solid var(--about-accent);
+        color: var(--about-accent);
+      }
+
+      .revival-exterior-cleaning-about .about-btn--outline:hover {
+        background-color: var(--about-accent);
+        color: var(--about-primary);
+      }
+
+      /* ─── 1. HERO ─── */
+      .revival-exterior-cleaning-about .about-hero {
+        position: relative;
+        min-height: 380px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
+        background-color: var(--about-primary);
+      }
+
+      .revival-exterior-cleaning-about .about-hero__bg {
+        position: absolute;
+        inset: 0;
+        background-image: url('/assets/images/about-hero.jpg');
+        background-size: cover;
+        background-position: center;
+        opacity: 0.35;
+      }
+
+      .revival-exterior-cleaning-about .about-hero__content {
+        position: relative;
+        z-index: 1;
+        padding: 60px 24px;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .revival-exterior-cleaning-about .about-hero__h1 {
+        font-family: var(--about-font-display);
+        font-weight: 800;
+        font-size: 2rem;
+        color: var(--about-white);
+        line-height: 1.15;
+        margin-bottom: 16px;
+      }
+
+      .revival-exterior-cleaning-about .about-hero__h1 span {
+        color: var(--about-accent);
+      }
+
+      .revival-exterior-cleaning-about .about-hero__sub {
+        font-size: 1rem;
+        color: rgba(255,255,255,0.85);
+        margin-bottom: 28px;
+        max-width: 560px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* ─── 2. STORY SPLIT ─── */
+      .revival-exterior-cleaning-about .about-story {
+        background-color: var(--about-white);
+        padding: 60px 24px;
+      }
+
+      .revival-exterior-cleaning-about .about-story__inner {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+      }
+
+      .revival-exterior-cleaning-about .about-story__image-wrap {
+        border-radius: 8px;
+        overflow: hidden;
+        flex-shrink: 0;
+      }
+
+      .revival-exterior-cleaning-about .about-story__image-wrap img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        display: block;
+        border-radius: 8px;
+      }
+
+      .revival-exterior-cleaning-about .about-story__copy p {
+        font-size: 0.97rem;
+        line-height: 1.75;
+        color: #334155;
+        margin-bottom: 14px;
+      }
+
+      .revival-exterior-cleaning-about .about-story__copy p:last-child {
+        margin-bottom: 0;
+      }
+
+      .revival-exterior-cleaning-about .about-story__quote {
+        border-left: 4px solid var(--about-accent);
+        padding: 16px 20px;
+        background-color: var(--about-light);
+        border-radius: 0 8px 8px 0;
+        margin: 20px 0;
+      }
+
+      .revival-exterior-cleaning-about .about-story__quote p {
+        font-family: var(--about-font-display);
+        font-size: 1rem;
+        font-weight: 600;
+        font-style: italic;
+        color: var(--about-primary) !important;
+        margin: 0 0 6px !important;
+      }
+
+      .revival-exterior-cleaning-about .about-story__quote cite {
+        font-size: 0.82rem;
+        color: #64748b;
+        font-style: normal;
+      }
+
+      /* ─── 3. GUARANTEES & CREDENTIALS ─── */
+      .revival-exterior-cleaning-about .about-credentials {
+        background-color: var(--about-light);
+        padding: 60px 24px;
+      }
+
+      .revival-exterior-cleaning-about .about-credentials__inner {
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      .revival-exterior-cleaning-about .about-credentials__header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .revival-exterior-cleaning-about .about-credentials__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .revival-exterior-cleaning-about .about-cred-card {
+        background-color: var(--about-white);
+        border-radius: 8px;
+        padding: 28px 24px;
+        box-shadow: 0 2px 12px rgba(15,42,67,0.08);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .revival-exterior-cleaning-about .about-cred-card__icon {
+        width: 48px;
+        height: 48px;
+        background-color: var(--about-accent);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+
+      .revival-exterior-cleaning-about .about-cred-card__icon svg {
+        color: var(--about-primary);
+      }
+
+      .revival-exterior-cleaning-about .about-cred-card__title {
+        font-family: var(--about-font-display);
+        font-weight: 700;
+        font-size: 1rem;
+        color: var(--about-primary);
+      }
+
+      .revival-exterior-cleaning-about .about-cred-card__text {
+        font-size: 0.88rem;
+        line-height: 1.65;
+        color: #475569;
+      }
+
+      .revival-exterior-cleaning-about .about-cred-card__verify {
+        font-size: 0.75rem;
+        color: #94a3b8;
+        font-style: italic;
+      }
+
+      /* ─── 4. AREAS ─── */
+      .revival-exterior-cleaning-about .about-areas {
+        background-color: var(--about-white);
+        padding: 60px 24px;
+      }
+
+      .revival-exterior-cleaning-about .about-areas__inner {
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      .revival-exterior-cleaning-about .about-areas__header {
+        text-align: center;
+        margin-bottom: 36px;
+      }
+
+      .revival-exterior-cleaning-about .about-areas__header p {
+        font-size: 0.97rem;
+        line-height: 1.7;
+        color: #475569;
+        max-width: 680px;
+        margin: 0 auto;
+      }
+
+      .revival-exterior-cleaning-about .about-areas__chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        margin-bottom: 32px;
+      }
+
+      .revival-exterior-cleaning-about .about-areas__chip {
+        font-family: var(--about-font-display);
+        font-size: 0.82rem;
+        font-weight: 600;
+        background-color: var(--about-light);
+        color: var(--about-primary);
+        padding: 8px 16px;
+        border-radius: 20px;
+        border: 1px solid rgba(15,42,67,0.12);
+        transition: background 0.2s, color 0.2s;
+      }
+
+      .revival-exterior-cleaning-about .about-areas__chip:hover {
+        background-color: var(--about-accent);
+        color: var(--about-primary);
+        border-color: var(--about-accent);
+      }
+
+      .revival-exterior-cleaning-about .about-areas__seo {
+        background-color: var(--about-light);
+        border-radius: 8px;
+        padding: 24px 28px;
+        font-size: 0.92rem;
+        line-height: 1.8;
+        color: #475569;
+        text-align: center;
+      }
+
+      /* ─── 5. CTA BAND ─── */
+      .revival-exterior-cleaning-about .about-cta-band {
+        background-color: var(--about-primary);
+        padding: 60px 24px;
+        text-align: center;
+      }
+
+      .revival-exterior-cleaning-about .about-cta-band__inner {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      .revival-exterior-cleaning-about .about-cta-band p {
+        font-size: 1rem;
+        color: rgba(255,255,255,0.82);
+        margin-bottom: 28px;
+        line-height: 1.7;
+      }
+
+      .revival-exterior-cleaning-about .about-cta-band__btns {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        align-items: center;
+      }
+
+      .revival-exterior-cleaning-about .about-cta-band__phone {
+        font-family: var(--about-font-display);
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: rgba(255,255,255,0.9);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: color 0.2s;
+      }
+
+      .revival-exterior-cleaning-about .about-cta-band__phone:hover {
+        color: var(--about-accent);
+      }
+
+      /* ─── Tablet 768px ─── */
+      @media (min-width: 768px) {
+        .revival-exterior-cleaning-about .about-hero__h1 {
+          font-size: 2.6rem;
+        }
+
+        .revival-exterior-cleaning-about .about-section-title {
+          font-size: 2rem;
+        }
+
+        .revival-exterior-cleaning-about .about-story__inner {
+          flex-direction: row;
+          align-items: flex-start;
+          gap: 48px;
+        }
+
+        .revival-exterior-cleaning-about .about-story__image-wrap {
+          width: 44%;
+          flex-shrink: 0;
+        }
+
+        .revival-exterior-cleaning-about .about-story__image-wrap img {
+          height: 100%;
+          min-height: 360px;
+        }
+
+        .revival-exterior-cleaning-about .about-story__copy {
+          flex: 1;
+        }
+
+        .revival-exterior-cleaning-about .about-credentials__grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .revival-exterior-cleaning-about .about-cta-band__btns {
+          flex-direction: row;
+          justify-content: center;
+        }
+      }
+
+      /* ─── Desktop 1024px ─── */
+      @media (min-width: 1024px) {
+        .revival-exterior-cleaning-about .about-hero {
+          min-height: 460px;
+        }
+
+        .revival-exterior-cleaning-about .about-hero__h1 {
+          font-size: 3rem;
+        }
+
+        .revival-exterior-cleaning-about .about-hero__sub {
+          font-size: 1.1rem;
+        }
+
+        .revival-exterior-cleaning-about .about-credentials__grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .revival-exterior-cleaning-about .about-story {
+          padding: 80px 24px;
+        }
+
+        .revival-exterior-cleaning-about .about-credentials {
+          padding: 80px 24px;
+        }
+
+        .revival-exterior-cleaning-about .about-areas {
+          padding: 80px 24px;
+        }
+
+        .revival-exterior-cleaning-about .about-cta-band {
+          padding: 80px 24px;
+        }
+      }
+    </style>
+
+<div class="revival-exterior-cleaning-about">
+
+  <!-- ═══════════════════════════════════════
+       1. HERO
+  ════════════════════════════════════════ -->
+  <section class="about-hero" aria-label="About page hero">
+    <div class="about-hero__bg" role="img" aria-label="Revival Exterior Cleaning team at work in Carlow"></div>
+    <div class="about-hero__content">
+      <span class="about-eyebrow">About Us</span>
+      <h1 class="about-hero__h1">Why Carlow Trusts <span>Revival Exterior Cleaning</span></h1>
+      <p class="about-hero__sub">Years of experience. Professional gear. Zero mess left behind. We're the exterior cleaning team Leinster relies on.</p>
+      <a href="/contact/" class="about-btn">Get Your Free Quote Today</a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       2. COMPANY STORY
+  ════════════════════════════════════════ -->
+  <section class="about-story" aria-label="Our story">
+    <div class="about-story__inner">
+
+      <div class="about-story__image-wrap">
+        <img src="/assets/images/roof-before-after2.png" alt="Revival Exterior Cleaning team working on a roof in Carlow" loading="lazy">
+      </div>
+
+      <div class="about-story__copy">
+        <span class="about-eyebrow">Our Story</span>
+        <h2 class="about-section-title">Built on Hard Work &amp; Honest Service</h2>
+
+        <p>Revival Exterior Cleaning was founded right here in Carlow with one simple goal — give homeowners and businesses a cleaning service they can actually rely on. No cowboys, no cut corners, no nasty surprises on the bill.</p>
+
+        <p>Over the years we've built a reputation across Leinster for doing the job properly the first time. From moss-covered roofs in Carlow town to grimy driveways in Kildare and Dublin, we've tackled it all — and we're proud of every single result.</p><!-- VERIFY: adjust founding story details to match actual business history -->
+
+        <p>We use professional-grade, eco-friendly treatments that are tough on algae, moss and grime — but safe for your property, your garden and your family. Every job gets the same level of care whether it's a small patio or a full roof clean.</p>
+
+        <div class="about-story__quote">
+          <p>"Brilliant job, no mess left behind."</p>
+          <cite>— John, Carlow</cite>
+        </div>
+
+        <p>We're fully insured, we turn up when we say we will, and we won't leave until you're happy. That's the Revival promise. <a href="/contact/" style="color:#F59E0B;font-weight:700;">Call today for a fast, free quote.</a></p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       3. GUARANTEES & CREDENTIALS
+  ════════════════════════════════════════ -->
+  <section class="about-credentials" aria-label="Our guarantees and credentials">
+    <div class="about-credentials__inner">
+      <div class="about-credentials__header">
+        <span class="about-eyebrow">Why Choose Us</span>
+        <h2 class="about-section-title">What You Can Expect From Us</h2>
+      </div>
+
+      <div class="about-credentials__grid">
+
+        <!-- Card 1 -->
+        <div class="about-cred-card">
+          <div class="about-cred-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <div class="about-cred-card__title">Fully Insured</div>
+          <p class="about-cred-card__text">Every job is covered by full public liability insurance, so you can relax knowing your property is in safe hands from start to finish.</p>
+          <!-- VERIFY: confirm insurance details and provider with business owner -->
+          <span class="about-cred-card__verify"><!-- VERIFY: confirm insurance level --></span>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="about-cred-card">
+          <div class="about-cred-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <div class="about-cred-card__title">We Turn Up On Time</div>
+          <p class="about-cred-card__text">We respect your time. We arrive when we say we will and keep you updated if anything changes. No waiting around, no last-minute cancellations.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="about-cred-card">
+          <div class="about-cred-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
+          <div class="about-cred-card__title">Satisfaction Guaranteed</div>
+          <p class="about-cred-card__text">We won't leave your property until you're completely happy with the result. If something isn't right, we'll sort it — no fuss, no argument.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="about-cred-card">
+          <div class="about-cred-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </div>
+          <div class="about-cred-card__title">No Mess Left Behind</div>
+          <p class="about-cred-card__text">We tidy up fully after every job. Your garden, driveway and surrounding areas are left spotless — just like our customers tell us time and again.</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="about-cred-card">
+          <div class="about-cred-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/>
+              <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+              <line x1="9" y1="9" x2="9.01" y2="9"/>
+              <line x1="15" y1="9" x2="15.01" y2="9"/>
+            </svg>
+          </div>
+          <div class="about-cred-card__title">Friendly &amp; Transparent</div>
+          <p class="about-cred-card__text">Plain-English quotes, honest pricing, no hidden charges. We talk you through what we're doing and why — so there are no surprises on the day or on the invoice.</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="about-cred-card">
+          <div class="about-cred-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+            </svg>
+          </div>
+          <div class="about-cred-card__title">Professional Equipment</div>
+          <p class="about-cred-card__text">We use trade-grade pressure washers, soft-wash systems and eco-friendly treatments — the right tool for every surface, every time.</p>
+          <!-- VERIFY: list specific equipment brands/models if desired -->
+          <span class="about-cred-card__verify"><!-- VERIFY: equipment details --></span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       4. AREAS WE COVER
+  ════════════════════════════════════════ -->
+  <section class="about-areas" aria-label="Areas we cover">
+    <div class="about-areas__inner">
+      <div class="about-areas__header">
+        <span class="about-eyebrow">Service Area</span>
+        <h2 class="about-section-title">Where We Work</h2>
+        <p>Based in Carlow, we travel across Leinster to bring professional roof cleaning, power washing and gutter cleaning to homes and businesses throughout Co. Carlow, Co. Dublin and Co. Kildare.</p>
+      </div>
+
+      <div class="about-areas__chips" role="list" aria-label="Towns and areas served">
+        <span class="about-areas__chip" role="listitem">Carlow Town</span>
+        <span class="about-areas__chip" role="listitem">Tullow</span>
+        <span class="about-areas__chip" role="listitem">Muinebheag</span>
+        <span class="about-areas__chip" role="listitem">Bagenalstown</span>
+        <span class="about-areas__chip" role="listitem">Hacketstown</span>
+        <span class="about-areas__chip" role="listitem">Newbridge</span>
+        <span class="about-areas__chip" role="listitem">Naas</span>
+        <span class="about-areas__chip" role="listitem">Athy</span>
+        <span class="about-areas__chip" role="listitem">Kildare Town</span>
+        <span class="about-areas__chip" role="listitem">Celbridge</span>
+        <span class="about-areas__chip" role="listitem">Maynooth</span>
+        <span class="about-areas__chip" role="listitem">Dublin South</span>
+        <span class="about-areas__chip" role="listitem">Tallaght</span>
+        <span class="about-areas__chip" role="listitem">Rathfarnham</span>
+        <span class="about-areas__chip" role="listitem">Dún Laoghaire</span>
+        <span class="about-areas__chip" role="listitem">Blessington</span>
+      </div><!-- VERIFY: confirm all towns are within your actual travel radius -->
+
+      <div class="about-areas__seo">
+        <p>Revival Exterior Cleaning provides <a href="/services/" style="color:#0F2A43;font-weight:700;">roof cleaning</a>, <a href="/power-washing-carlow" style="color:#0F2A43;font-weight:700;">power washing</a> and <a href="/gutter-cleaning-carlow" style="color:#0F2A43;font-weight:700;">gutter cleaning</a> across Leinster. From Carlow to Kildare and throughout Co. Dublin, our team brings years of experience and professional-grade equipment directly to your door. Not sure if we cover your area? <a href="/contact/" style="color:#F59E0B;font-weight:700;">Give us a ring</a> — we're happy to help.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       5. CTA BAND
+  ════════════════════════════════════════ -->
+  <section class="about-cta-band" aria-label="Contact call to action">
+    <div class="about-cta-band__inner">
+      <span class="about-eyebrow">Ready to Get Started?</span>
+      <h2 class="about-section-title about-section-title--white">Let's Bring Your Property Back to Life</h2>
+      <p>Fast, free quotes. No obligation. We cover Co. Carlow, Co. Kildare and Co. Dublin — call today or drop us a message and we'll get back to you quickly.</p>
+      <div class="about-cta-band__btns">
+        <a href="/contact/" class="about-btn">Get a Free Quote</a>
+        <a href="tel:+353832809535" class="about-cta-band__phone">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16.92z"/>
+          </svg>
+          +353 83 280 9535
+        </a>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /.revival-exterior-cleaning-about -->
+
+{% endblock %}

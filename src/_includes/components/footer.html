@@ -1,0 +1,391 @@
+<style>
+  :root {
+    --pd-primary: #0F2A43;
+    --pd-accent: #F59E0B;
+    --pd-light: #E8F4FD;
+    --pd-white: #ffffff;
+    --pd-font-display: 'Poppins', sans-serif;
+    --pd-font-body: 'Roboto', sans-serif;
+  }
+
+  .pd-footer {
+    background-color: var(--pd-primary);
+    color: rgba(255, 255, 255, 0.8);
+    font-family: var(--pd-font-body);
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+
+  .pd-footer a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .pd-footer a:hover {
+    color: var(--pd-accent);
+  }
+
+  /* ── Main Grid ── */
+  .pd-footer__main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 24px 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px 30px;
+  }
+
+  /* Column headings */
+  .pd-footer__heading {
+    font-family: var(--pd-font-display);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--pd-white);
+    margin-bottom: 16px;
+    position: relative;
+    padding-bottom: 10px;
+  }
+
+  .pd-footer__heading::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 36px;
+    height: 3px;
+    background-color: var(--pd-accent);
+    border-radius: 2px;
+  }
+
+  /* About column */
+  .pd-footer__about-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+
+  .pd-footer__about-logo img {
+    height: 115px;
+    width: auto;
+    display: block;
+  }
+
+  .pd-footer__about-logo-text {
+    font-family: var(--pd-font-display);
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--pd-white);
+    line-height: 1.25;
+  }
+
+  .pd-footer__about-logo-text span {
+    display: block;
+    font-weight: 400;
+    font-size: 0.7rem;
+    color: var(--pd-accent);
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+  }
+
+  .pd-footer__blurb {
+    font-size: 0.86rem;
+    color: rgba(255, 255, 255, 0.72);
+    margin-bottom: 0;
+  }
+
+  /* Quick Links & Services lists */
+  .pd-footer__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .pd-footer__list li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+
+  .pd-footer__list li::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--pd-accent);
+    flex-shrink: 0;
+  }
+
+  /* Contact column */
+  .pd-footer__contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 12px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .pd-footer__contact-icon {
+    color: var(--pd-accent);
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .pd-footer__contact-item a {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .pd-footer__contact-item a:hover {
+    color: var(--pd-accent);
+  }
+
+  .pd-footer__hours {
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 2px;
+  }
+
+  /* ── Bottom Bar ── */
+  .pd-footer__bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .pd-footer__bottom-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+
+  /* Social icons */
+  .pd-footer__socials {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .pd-footer__socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: var(--pd-white);
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .pd-footer__socials a:hover {
+    background-color: var(--pd-accent);
+    color: var(--pd-primary);
+  }
+
+  /* Copyright */
+  .pd-footer__copy {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+  }
+
+  .pd-footer__copy a {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 600;
+  }
+
+  .pd-footer__copy a:hover {
+    color: var(--pd-accent);
+  }
+
+  .pd-footer__credit {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.35);
+    text-align: center;
+  }
+
+  .pd-footer__credit a {
+    color: rgba(255, 255, 255, 0.45);
+    font-weight: 600;
+  }
+
+  .pd-footer__credit a:hover {
+    color: var(--pd-accent);
+  }
+
+  @media (min-width: 768px) {
+    .pd-footer__bottom-inner {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .pd-footer__copy-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .pd-footer__main {
+      grid-template-columns: 1fr 1fr;
+      padding: 40px 20px 30px;
+      gap: 32px 20px;
+    }
+
+    .pd-footer__col--about {
+      grid-column: 1 / -1;
+    }
+  }
+
+  @media (max-width: 479px) {
+    .pd-footer__main {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<footer class="pd-footer" role="contentinfo">
+
+  <div class="pd-footer__main">
+
+    <!-- Column 1: About -->
+    <div class="pd-footer__col pd-footer__col--about">
+      <div class="pd-footer__about-logo">
+        <img src="/assets/images/logo-light.png" alt="Revival Exterior Cleaning logo" onerror="this.style.display='none'">
+      </div>
+      <p class="pd-footer__blurb">
+        Carlow's trusted exterior cleaning specialists. We restore roofs, driveways, patios and gutters to their best — using professional-grade equipment and eco-friendly solutions. Proudly serving Carlow and the surrounding counties.
+      </p>
+    </div>
+
+    <!-- Column 2: Quick Links -->
+    <div class="pd-footer__col">
+      <h3 class="pd-footer__heading">Quick Links</h3>
+      <ul class="pd-footer__list">
+        <li><a href="/">Home</a></li>
+        <li><a href="/services/">Services</a></li>
+        <li><a href="/power-washing-carlow">Power Washing</a></li>
+        <li><a href="/gutter-cleaning-carlow">Gutter Cleaning</a></li>
+        <li><a href="/about/">About Us</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Services -->
+    <div class="pd-footer__col">
+      <h3 class="pd-footer__heading">Our Services</h3>
+      <ul class="pd-footer__list">
+        <li><a href="/services/">Roof Cleaning</a></li>
+        <li><a href="/power-washing-carlow">Power Washing</a></li>
+        <li><a href="/gutter-cleaning-carlow">Gutter Cleaning</a></li>
+        <li><a href="/services/">Driveway Cleaning</a></li>
+        <li><a href="/services/">Patio Cleaning</a></li>
+        <li><a href="/services/">Fascia &amp; Soffit Cleaning</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 4: Contact -->
+    <div class="pd-footer__col">
+      <h3 class="pd-footer__heading">Contact Us</h3>
+
+      <div class="pd-footer__contact-item">
+        <span class="pd-footer__contact-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16.92z"/>
+          </svg>
+        </span>
+        <a href="tel:+353832809535" aria-label="Call Revival Exterior Cleaning">+353 83 280 9535</a>
+      </div>
+
+      <div class="pd-footer__contact-item">
+        <span class="pd-footer__contact-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+        </span>
+        <a href="mailto:revivalexteriorclean@gmail.com" aria-label="Email Revival Exterior Cleaning">revivalexteriorclean@gmail.com</a>
+      </div>
+
+      <div class="pd-footer__contact-item">
+        <span class="pd-footer__contact-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+        </span>
+        <span>Carlow, Ireland</span>
+      </div>
+
+      <div class="pd-footer__contact-item">
+        <span class="pd-footer__contact-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+        </span>
+        <div>
+          <!-- VERIFY hours -->
+          <div>Mon–Fri: 8:00am – 6:00pm</div>
+          <div class="pd-footer__hours">Sat: 9:00am – 4:00pm · Sun: Closed</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="pd-footer__bottom">
+    <div class="pd-footer__bottom-inner">
+
+      <nav class="pd-footer__socials" aria-label="Social media">
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Revival Exterior Cleaning on Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+          </svg>
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Revival Exterior Cleaning on Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
+        </a>
+        <!-- Google / Maps placeholder -->
+        <a href="https://maps.google.com/" target="_blank"rel="noopener noreferrer" aria-label="Find Revival Exterior Cleaning on Google Maps">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+        </a>
+      </nav>
+
+      <div class="pd-footer__copy-wrap">
+        <p class="pd-footer__copy">
+          &copy; <span id="pd-footer-year"></span> <a href="/">Revival Exterior Cleaning</a>. All rights reserved.
+        </p>
+        <p class="pd-footer__credit">
+          Website by <a href="https://acutis.ie" target="_blank" rel="noopener noreferrer">Acutis</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+
+<script>
+  (function () {
+    var el = document.getElementById('pd-footer-year');
+    if (el) el.textContent = new Date().getFullYear();
+  })();
+</script>
